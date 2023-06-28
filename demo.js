@@ -1,6 +1,6 @@
 console.dir(document)
-var lists = document.getElementsByClassName
-('list-group-item');
+var lists = document.getElementsByTagName
+('li');
 
 for(var i=0;i<lists.length;i++){
     lists[i].style.fontWeight ='bold';
