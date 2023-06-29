@@ -29,4 +29,11 @@ console.log(items.previousElementSibling);
 var newDiv = document.createElement('div');
 newDiv.className = 'hello';
 newDiv.setAttribute('title', 'hello New Div');
-console.log(newDiv);
+var newText = document.createTextNode('Hello World');
+newDiv.appendChild(newText);
+console.log(newDiv)
+var container = document.querySelector('header .container');
+var h1 = document.querySelector('header h1');
+container.insertBefore(newDiv,h1);
+
+items.insertBefore(newDiv, items.firstElementChild);
