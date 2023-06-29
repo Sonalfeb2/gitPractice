@@ -18,5 +18,7 @@
 
 var items = document.querySelector('#items');
 console.log(items.parentElement);
+console.log(items.lastElementChild);
+console.log(items.lastChild);
 
 
