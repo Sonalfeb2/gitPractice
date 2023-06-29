@@ -22,4 +22,5 @@ console.log(items.lastElementChild);
 console.log(items.lastChild);
 console.log(items.firstElementChild);
 console.log(items.firstChild);
-
+console.log(items.nextSibling);
+console.log(items.nextElementSibling);
