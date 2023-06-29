@@ -27,3 +27,20 @@ function RemoveItem(e){
         }
     }
 }
+
+var search = document.getElementById('search');
+search.addEventListener('keyup', SearchItem);
+function SearchItem(e){
+    var input = e.target.value.toLowerCase();
+    var itemList = document.getElementsByTagName('li');
+    Array.from(itemList).forEach((item)=>{
+        var itemName = item.firstChild.textContent;
+        if(itemName.toLowerCase().indexOf(input)!=-1){
+            item.style.display ="block";
+        }
+        else{
+            item.style.display ="none";
+        }
+    })
+    
+}
